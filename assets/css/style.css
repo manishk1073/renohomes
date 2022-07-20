@@ -372,6 +372,9 @@ h5.vc_custom_heading {
 /*********************image gallery with light box start****************/
 .our_services{
   background-image: url('../images/background-dots.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 .img-wrapper {
   position: relative;
@@ -706,4 +709,87 @@ a:hover {
   }
 }
 
+.social_icons_email, .social_icons .social_header li:last-child{
+  margin-right: 0px;
+}
 /****************testimonial end**********************/
+
+/***************Responsive****************************/
+
+@media only screen and (max-width: 786px) {
+.top-header {
+  height: 70px;
+}
+.social_icons_email {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin: 0px;
+}
+.social_icons {
+  justify-content: center;
+}
+.social_icons_email, .social_icons .social_header li {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 30px;
+}
+.consultation-link{
+  width: auto;
+}
+.carousel-caption {
+  padding-bottom: 110px;
+  right: 8%;
+  left: 8%;
+}
+.vc_column-inner {
+  padding: 30px 0;
+  margin-top: -80px;
+}
+.wpb_wrapper {
+  padding: 0 15px;
+}
+h5.vc_custom_heading {
+  font-size: 22px;
+}
+.number_content {
+  margin-bottom: 60px;
+}
+.mob-mb-0{
+  margin-bottom: 0px;
+}
+.frame {
+  margin-bottom: 22px;
+}
+.start_your_project h5 {
+  font-size: 26px;
+}
+.start_your_project p {
+  font-size: 14px;
+}
+.contact_our_designer_content {
+  padding: 25px 33px;
+  width: 95%;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+.left_content_designer {
+  width: 100%;
+  font-size: 16px;
+}
+.right_content_designer {
+  width: 100%;
+  padding: 0px;
+  margin-top: 10px;
+}
+.mob-mt-25{
+  margin-top: 25px;
+}
+.sub-heading {
+  font-size: 15px;
+}
+}
