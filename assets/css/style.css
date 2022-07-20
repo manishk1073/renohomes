@@ -325,6 +325,11 @@ h5.vc_custom_heading {
   padding: 10px 0;
 }
 
+.why_choose_us_img{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
 /****************image caption start***************/
 
 .frame {
