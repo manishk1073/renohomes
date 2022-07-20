@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Bootstrap Slider Full Screen with Animations</title>
+    <link rel='stylesheet' href='./assets/css/bootstrap.min.css'>
+
+    <link rel='stylesheet' href='./assets/css/animate.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="social_icons_email">
+                        <i class="fa fa-envelope-o"></i>
+                        <a id="email-to" href="mailto:support@renohomes.in">support@renohomes.in</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="social_icons">
+                        <ul class="social_header">
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- partial:index.partial.html -->
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('./assets/images/Commercial-Banners-1.webp');">
+                </div>
+                <div class="carousel-caption">
+                    <div class="logoImage">
+                        <img src="./assets/images/logo.svg" alt="logo" />
+                    </div>
+                    <h2 class="animated fadeInLeft">Building Exceptional Homes</h2>
+                    <p class="animated fadeInUp">Trusted by 1,000+ happy customers</p>
+                    <p class="animated fadeInUp"><a href="#"
+                            class="btn btn-transparent btn-rounded btn-large consultation-link">Get A Free Quote</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('./assets/images/Commercial-Banners-2.webp');">
+                </div>
+                <div class="carousel-caption">
+                    <div class="logoImage">
+                        <img src="./assets/images/logo.svg" alt="logo" />
+                    </div>
+                    <h2 class="animated fadeInLeft">Building Exceptional Homes</h2>
+                    <p class="animated fadeInUp">Trusted by 1,000+ happy customers</p>
+                    <p class="animated fadeInUp"><a href="#"
+                            class="btn btn-transparent btn-rounded btn-large consultation-link">Get A Free Quote</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('./assets/images/Commercial-Banners-3.webp');">
+                </div>
+                <div class="carousel-caption">
+                    <div class="logoImage">
+                        <img src="./assets/images/logo.svg" alt="logo" />
+                    </div>
+                    <h2 class="animated fadeInLeft">Building Exceptional Homes</h2>
+                    <p class="animated fadeInUp">Trusted by 1,000+ happy customers</p>
+                    <p class="animated fadeInUp"><a href="#"
+                            class="btn btn-transparent btn-rounded btn-large consultation-link">Get A Free Quote</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </div>
+    <!-- partial -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="vc_column-inner">
+                    <div class="wpb_wrapper">
+                        <h5 style="text-align: center" class="vc_custom_heading">Connect With Our Designer</h5>
+                        <div class="form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" placeholder="Phone">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" placeholder="Locality">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-control">
+                                            <option value="">Type of Property</option>
+                                            <option value="Commercial">Commercial</option>
+                                            <option value="Residential">Residential</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" placeholder="Total Area (sqft)">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="btn btn-transparent btn-rounded consultation-link">Submit</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="vc_custom_heading mb-3">Why Choose us</h5>
+                    <p class="sub-heading mb-5 p-0">Regardless of how complex or even small your needs are, our
+                        dedicated in-house team of developers and project managers will ensure that the job gets done
+                        with the highest level of professionalism and most cost affordably.</p>
+
+                    <div class="chooseus_content">
+                        <div class="sub-content-list">
+                            <div class="content-header"> <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                Eclectic Home Interior Themes And Personalisation</div>
+                            <div class="content-text">Craft your home from myriad urban-modern style themes and get the
+                                design that reflects your style</div>
+                        </div>
+
+                        <div class="sub-content-list">
+                            <div class="content-header"> <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                Modular And Smart Building Elements
+                            </div>
+                            <div class="content-text">Our drive for excellence enables us to give you sustainable
+                                designs
+                                equipped with cutting-edge technology</div>
+                        </div>
+                        <div class="sub-content-list">
+                            <div class="content-header"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> Space
+                                Optimising Solutions
+                            </div>
+                            <div class="content-text">We offer compact design solutions with innovative interior designs
+                                for
+                                effective space-saving</div>
+                        </div>
+                        <div class="sub-content-list">
+                            <div class="content-header"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> High
+                                Quality Control</div>
+                            <div class="content-text">Get amazing interior designs with optimal designs, transparent
+                                pricing, and door-step delivery and installation</div>
+                        </div>
+                        <div class="sub-content-list">
+                            <div class="content-header"> <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                Warranty</div>
+                            <div class="content-text">We value your investment, therefore our interior design solutions
+                                are
+                                backed with lucrative warranty</div>
+                        </div>
+                        <div class="sub-content-list">
+                            <div class="content-header"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> Sales
+                                Support</div>
+                            <div class="content-text">We understand the value of communication and hence offer
+                                lightning-fast support during the project and also after its completion</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/images/Commercial_WHY-CHOOSE-US.webp" alt="" class="chooseus_image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="number_project">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="number_content">
+                        <div class="number_icon">
+                            <img src="./assets/images/icon/first.png" alt="">
+                        </div>
+                        <div class="number_heading">
+                            <p>100+</p>
+                        </div>
+                        <div class="number_text">
+                            Project Completed
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="number_content">
+                        <div class="number_icon">
+                            <img src="./assets/images/icon/second.png" alt="">
+                        </div>
+                        <div class="number_heading">
+                            <p>3.5 Lakh+</p>
+                        </div>
+                        <div class="number_text">
+                            Sq. ft. Area Commissioned
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="number_content">
+                        <div class="number_icon">
+                            <img src="./assets/images/icon/third.png" alt="">
+                        </div>
+                        <div class="number_heading">
+                            <p>10+</p>
+                        </div>
+                        <div class="number_text">
+                            Cities
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-padding-80 our_services">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="vc_custom_heading text-center mb-3">Our Services</h5>
+                    <p class="sub-heading text-center mb-5">We offer end-to-end interior design solutions<br />
+                        <strong>For Commercial Spaces</strong>
+                    </p>
+                </div>
+                <div class="frame col-md-3">
+                    <img src="./assets/images/img-1.jpg">
+                    <div class="details">
+                        <h3>Imperial Blue U-Shaped Modular Kitchen</h3>
+                        <p>Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum.
+                            Vici consequat justo enim. Venenatis eget adipiscing luctus lorem. Adipiscing veni amet
+                            luctus enim sem libero tellus viverra venenatis aliquam. Commodo natoque quam pulvinar elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="frame col-md-3">
+                    <img src="./assets/images/img-2.jpg">
+                    <div class="details">
+                        <h3>Imperial Blue U-Shaped Modular Kitchen</h3>
+                        <p>Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum.
+                            Vici consequat justo enim. Venenatis eget adipiscing luctus lorem. Adipiscing veni amet
+                            luctus enim sem libero tellus viverra venenatis aliquam. Commodo natoque quam pulvinar elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="frame col-md-3">
+                    <img src="./assets/images/img-3.jpg">
+                    <div class="details">
+                        <h3>Imperial Blue U-Shaped Modular Kitchen</h3>
+                        <p>Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum.
+                            Vici consequat justo enim. Venenatis eget adipiscing luctus lorem. Adipiscing veni amet
+                            luctus enim sem libero tellus viverra venenatis aliquam. Commodo natoque quam pulvinar elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="frame col-md-3">
+                    <img src="./assets/images/img-4.jpg">
+                    <div class="details">
+                        <h3>Imperial Blue U-Shaped Modular Kitchen</h3>
+                        <p>Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum.
+                            Vici consequat justo enim. Venenatis eget adipiscing luctus lorem. Adipiscing veni amet
+                            luctus enim sem libero tellus viverra venenatis aliquam. Commodo natoque quam pulvinar elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="start_your_project">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>We are ready to <span>start your project</span></h5>
+                    <p>We offer a tailored approach to complement your vision for your commercial interiors project.</p>
+                    <p>Call or Email us and talk to our Designer to find out how.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_our_designer">
+        <div class="container">
+            <div class="contact_our_designer_content">
+                <div class="left_content_designer">Contact us to help you get started in
+                    the right direction with your project</div>
+                <div class="right_content_designer">
+                    <a href="#" class="btn btn-transparent btn-rounded consultation-link">CONNECT WITH US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="gallery" class="section-padding-80">
+        <div class="container">
+            <div id="image-gallery">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="vc_custom_heading text-center mb-3">Our Latest Project</h5>
+                        <p class="sub-heading text-center mb-4">Transform your <strong>office spaces</strong> with
+                            on-time<br />
+                            - in budget Interior Design Solution</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                        <div class="img-wrapper">
+                            <a href="./assets/images/project-1.jpg"><img src="./assets/images/project-1.jpg"
+                                    class="img-responsive"></a>
+                            <div class="img-overlay">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                        <div class="img-wrapper">
+                            <a href="./assets/images/project-2.jpg""><img src=" ./assets/images/project-2.jpg""
+                                class="img-responsive"></a>
+                            <div class="img-overlay">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                        <div class="img-wrapper">
+                            <a href="./assets/images/project-3.jpg"><img src="./assets/images/project-3.jpg"
+                                    class="img-responsive"></a>
+                            <div class="img-overlay">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                        <div class="img-wrapper">
+                            <a href="./assets/images/project-4.jpg"><img src="./assets/images/project-4.jpg"
+                                    class="img-responsive"></a>
+                            <div class="img-overlay">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                        <div class="img-wrapper">
+                            <a href="./assets/images/project-5.jpg"><img src="./assets/images/project-5.jpg"
+                                    class="img-responsive"></a>
+                            <div class="img-overlay">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                        <div class="img-wrapper">
+                            <a href="./assets/images/project-6.jpg"><img src="./assets/images/project-6.jpg"
+                                    class="img-responsive"></a>
+                            <div class="img-overlay">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                        <div class="img-wrapper">
+                            <a href="./assets/images/project-7.jpg"><img src="./assets/images/project-7.jpg"
+                                    class="img-responsive"></a>
+                            <div class="img-overlay">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                        <div class="img-wrapper">
+                            <a href="./assets/images/project-8.jpg"><img src="./assets/images/project-8.jpg"
+                                    class="img-responsive"></a>
+                            <div class="img-overlay">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End row -->
+            </div><!-- End image gallery -->
+        </div><!-- End container -->
+    </section>
+
+
+    <div class="our_partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="vc_custom_heading text-center mb-3">Our Partner</h5>
+                    <p class="sub-heading text-center mb-5">they are with us since
+                        our inception</p>
+                </div>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./assets/images/brand-1.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-2.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-3.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-4.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-5.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-6.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-7.png" alt="Our Partner">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-none d-lg-block">
+                    <ol class="carousel-indicators tabs">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                            <figure>
+                                <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-01-179x179.png"
+                                    class="img-fluid" alt="">
+                            </figure>
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                            <figure>
+                                <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-02-306x306.png"
+                                    class="img-fluid" alt="">
+                            </figure>
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                            <figure>
+                                <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-03-179x179.png"
+                                    class="img-fluid" alt="">
+                            </figure>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div id="carouselExampleIndicators" data-interval="false" class="carousel slide"
+                        data-ride="carousel">
+                        <h3>WHAT OUR CLIENTS SAY</h3>
+                        <h5 class="vc_custom_heading mb-0 mt-3">Testimonial</h5>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="quote-wrapper">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <h3>peter lee</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote-wrapper">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                    <h3>peter lee</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="quote-wrapper">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                                    <h3>peter lee</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-stripe text-center">2021. all copyrights reserved. </div>
+
+    <script src='./assets/js/jquery.min.js'></script>
+    <script src='./assets/js/bootstrap.min.js'></script>
+    <script src='./assets/js/custom.js'></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(function () {
+            // Owl Carousel
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 5,
+                margin: 80,
+                loop: true,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: false,
+                mouseDrag: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    900: {
+                        items: 5
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".testimonial .indicators li").click(function () {
+                var i = $(this).index();
+                var targetElement = $(".testimonial .tabs li");
+                targetElement.eq(i).addClass('active');
+                targetElement.not(targetElement[i]).removeClass('active');
+            });
+            $(".testimonial .tabs li").click(function () {
+                var targetElement = $(".testimonial .tabs li");
+                targetElement.addClass('active');
+                targetElement.not($(this)).removeClass('active');
+            });
+        });
+        $(document).ready(function () {
+            $(".slider .swiper-pagination span").each(function (i) {
+                $(this).text(i + 1).prepend("0");
+            });
+        });
+    </script>
+</body>
+
+</html>
