@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>CodePen - Bootstrap Slider Full Screen with Animations</title>
+    <title>Renohomes :: Landing Page</title>
     <link rel='stylesheet' href='./assets/css/bootstrap.min.css'>
-
     <link rel='stylesheet' href='./assets/css/animate.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -14,18 +12,18 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
     <link rel="stylesheet" href="./assets/css/style.css">
-
 </head>
 
 <body>
-
     <div class="top-header">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <div class="social_icons_email">
                         <i class="fa fa-envelope-o"></i>
-                        <a id="email-to" href="mailto:support@renohomes.in">support@renohomes.in</a>
+                        <a id="email-to" href="mailto:support@renohomes.in" class="mr-2 mr-md-2 mr-lg-5">support@renohomes.in</a>
+                        <i class="fa fa-phone"></i>
+                        <a id="tel" href="tel:7669533111">+91-76695 33111</a>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
@@ -44,13 +42,11 @@
         </div>
     </div>
 
-    <!-- partial:index.partial.html -->
+    <!-- partial -->
     <div id="myCarousel" class="carousel slide">
         <!-- Indicators -->
-        <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('./assets/images/Commercial-Banners-1.webp');">
                 </div>
                 <div class="carousel-caption">
@@ -64,7 +60,6 @@
                 </div>
             </div>
             <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('./assets/images/Commercial-Banners-2.webp');">
                 </div>
                 <div class="carousel-caption">
@@ -78,7 +73,6 @@
                 </div>
             </div>
             <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('./assets/images/Commercial-Banners-3.webp');">
                 </div>
                 <div class="carousel-caption">
@@ -92,15 +86,12 @@
                 </div>
             </div>
         </div>
-
-        <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-
     </div>
     <!-- partial -->
 
@@ -111,32 +102,51 @@
                     <div class="wpb_wrapper">
                         <h5 style="text-align: center" class="vc_custom_heading">Connect With Our Designer</h5>
                         <div class="form">
-                            <form>
+                            <form id="form" autocomplete="off">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Name">
+                                    <div class="col-md-3">
+                                        <input type="text" name="txt_name" id="txt_name" class="form-control" placeholder="Name">
                                     </div>
                                     <div class="col-md-3">
-                                        <input type="text" class="form-control" placeholder="Phone">
+                                        <input type="text" name="txt_phone" id="txt_phone" class="form-control" placeholder="Phone">
                                     </div>
                                     <div class="col-md-3">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" name="txt_email" id="txt_email" class="form-control" placeholder="Email">
                                     </div>
                                     <div class="col-md-3">
-                                        <input type="text" class="form-control" placeholder="Locality">
+                                        <input type="text" name="txt_location" id="txt_location" class="form-control" placeholder="Locality">
                                     </div>
                                     <div class="col-md-3">
-                                        <select class="form-control">
+                                        <input type="text" name="txt_pincode" id="txt_pincode" class="form-control" placeholder="Pincode">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="form-control" name="txt_property_type" id="txt_property_type">
                                             <option value="">Type of Property</option>
                                             <option value="Commercial">Commercial</option>
                                             <option value="Residential">Residential</option>
+                                            <option value="Institutional">Institutional</option>
                                         </select>
                                     </div>
                                     <div class="col-md-3">
-                                        <input type="text" class="form-control" placeholder="Total Area (sqft)">
+                                        <select class="form-control" name="txt_property_size" id="txt_property_size">
+                                            <option value="">Property Size</option>
+                                            <option value="1 BHK">1 BHK</option>
+                                            <option value="2 BHK">2 BHK</option>
+                                            <option value="3 BHK">3 BHK</option>
+                                            <option value="4 BHK">4 BHK</option>
+                                        </select>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#" class="btn btn-transparent btn-rounded consultation-link">Submit</a>
+                                        <input type="text" name="txt_area" id="txt_area" class="form-control" placeholder="Total Area (sqft)">
+                                    </div>
+                                </div>
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-4">
+                                        <button name="submit" id="submit" class="btn btn-transparent btn-rounded consultation-link">Submit</button>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label id="loader"></label>
+                                         <label id="info"></label>
                                     </div>
                                 </div>
                             </form>
@@ -151,10 +161,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5 class="vc_custom_heading mb-3">Why Choose us</h5>
-                    <p class="sub-heading mb-5 p-0">Regardless of how complex or even small your needs are, our
-                        dedicated in-house team of developers and project managers will ensure that the job gets done
-                        with the highest level of professionalism and most cost affordably.</p>
+                    <h5 class="vc_custom_heading mb-3">Why Choose Us/RenoHomes</h5>
+                    <p class="sub-heading mb-5 p-0">Regardless of how complex or even small your needs are, our dedicated in-house team of designers, architects and site supervisors will ensure that the job gets done with the highest level of professionalism, exactly like the design and most cost affordably.</p>
 
                     <div class="chooseus_content">
                         <div class="sub-content-list">
@@ -209,7 +217,6 @@
         </div>
     </section>
 
-
     <div class="number_project">
         <div class="container">
             <div class="row">
@@ -219,7 +226,7 @@
                             <img src="./assets/images/icon/first.png" alt="">
                         </div>
                         <div class="number_heading">
-                            <p>100+</p>
+                            <p>1000+</p>
                         </div>
                         <div class="number_text">
                             Project Completed
@@ -232,7 +239,7 @@
                             <img src="./assets/images/icon/second.png" alt="">
                         </div>
                         <div class="number_heading">
-                            <p>3.5 Lakh+</p>
+                            <p>1 M+</p>
                         </div>
                         <div class="number_text">
                             Sq. ft. Area Commissioned
@@ -245,10 +252,10 @@
                             <img src="./assets/images/icon/third.png" alt="">
                         </div>
                         <div class="number_heading">
-                            <p>10+</p>
+                            <p>5+</p>
                         </div>
-                        <div class="number_text">
-                            Cities
+                        <div class="number_text text-center">
+                            Cities <br/>(Kolkata, Delhi, Gurugram, Noida, Great Noida, Ghaziabad)
                         </div>
                     </div>
                 </div>
@@ -261,8 +268,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <h5 class="vc_custom_heading text-center mb-3">Our Services</h5>
-                    <p class="sub-heading text-center mb-5">We offer end-to-end interior design solutions<br />
-                        <strong>For Commercial Spaces</strong>
+                    <p class="sub-heading text-center mb-5">We offer end-to-end interior design solutions <br />
+                        <strong>For Residential, Institutional and Commercial Spaces.</strong>
                     </p>
                 </div>
                 <div class="frame col-md-3">
@@ -309,7 +316,6 @@
         </div>
     </section>
 
-
     <div class="start_your_project">
         <div class="container">
             <div class="row">
@@ -333,7 +339,6 @@
             </div>
         </div>
     </div>
-
 
     <section id="gallery" class="section-padding-80">
         <div class="container">
@@ -423,7 +428,6 @@
         </div><!-- End container -->
     </section>
 
-
     <div class="our_partner">
         <div class="container">
             <div class="row">
@@ -456,11 +460,54 @@
                 <div class="item">
                     <img src="./assets/images/brand-7.png" alt="Our Partner">
                 </div>
+                <div class="item">
+                    <img src="./assets/images/brand-8.svg" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-9.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-10.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-11.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-12.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-13.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-14.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-15.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-16.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-17.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-18.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-19.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-20.jpeg" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-21.png" alt="Our Partner">
+                </div>
+                <div class="item">
+                    <img src="./assets/images/brand-22.png" alt="Our Partner">
+                </div>
             </div>
         </div>
     </div>
-
-
 
     <section class="testimonial">
         <div class="container">
@@ -469,19 +516,19 @@
                     <ol class="carousel-indicators tabs">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
                             <figure>
-                                <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-01-179x179.png"
+                                <img src="./assets/images/testimonial.png"
                                     class="img-fluid" alt="">
                             </figure>
                         </li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1">
                             <figure>
-                                <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-02-306x306.png"
+                                <img src="./assets/images/testimonial-female.png"
                                     class="img-fluid" alt="">
                             </figure>
                         </li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2">
                             <figure>
-                                <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-03-179x179.png"
+                                <img src="./assets/images/testimonial.png"
                                     class="img-fluid" alt="">
                             </figure>
                         </li>
@@ -495,36 +542,21 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="quote-wrapper">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                        unknown printer took a galley of type and scrambled it to make a type specimen
-                                        book. It has survived not only five centuries, but also the leap into electronic
-                                        typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                                        with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                        recently with desktop publishing software like Aldus PageMaker including
-                                        versions of Lorem Ipsum.</p>
-                                    <h3>peter lee</h3>
+                                    <p>Excellent work done by RenoHomes on my home interiors. Carefully considering and detailing of our requirements during the design phase. They were very supportive in providing multiple designs as well as modifying them.
+                                        The installation stage went on smoothly without any difficulties. They are professional, well organized, On time and very committed.</p>
+                                    <h3>Devansh Sharma</h3>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="quote-wrapper">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                        unknown printer took a galley of type and scrambled it to make a type specimen
-                                        book. It has survived not only five centuries, but also the leap into electronic
-                                        typesetting, remaining essentially unchanged.</p>
-                                    <h3>peter lee</h3>
+                                    <p>Good work by the team and the way they work and co-ordinate with the client is amazing. Their ideas are incredible and very well executed. Keep up the good work.</p>
+                                    <h3>Poonam Vivek Raghuwangshi</h3>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="quote-wrapper">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                        unknown printer took a galley of type and scrambled it to make a type specimen
-                                        book. It has survived not only five centuries, but also the leap into electronic
-                                        typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                                        with the release of Letraset sheets containing Lorem Ipsum passages.</p>
-                                    <h3>peter lee</h3>
+                                    <p>A very smooth and hassle free experience with the team. On time replies to any queries asked. Highly satisfied with the service. Must recommend.</p>
+                                    <h3>Sarat Mukherjee</h3>
                                 </div>
                             </div>
                         </div>
@@ -576,8 +608,7 @@
                 }
             });
         });
-    </script>
-    <script>
+
         $(document).ready(function () {
             $(".testimonial .indicators li").click(function () {
                 var i = $(this).index();

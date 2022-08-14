@@ -149,7 +149,7 @@ p {
 }
 
 .form .consultation-link {
-  width: auto;
+  width: 100%;
 }
 
 .vc_column-inner {
@@ -701,6 +701,10 @@ a:hover {
 
 .carousel-indicators.indicators .active {
   width: 30px !important;
+}
+.owl-carousel .owl-stage{
+  display: flex;
+  place-items: center;
 }
 
 @media only screen and (max-width: 1200px) {
